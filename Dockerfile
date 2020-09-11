@@ -30,7 +30,7 @@ RUN curl -s https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
 # Clone repository and install
-RUN git clone https://github.com/yeachan153/twitter_scrape_export.git
+RUN git clone -b 0.2.0 https://github.com/yeachan153/twitter_scrape_export.git
 WORKDIR twitter_scrape_export
 RUN poetry install
 
